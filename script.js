@@ -14,7 +14,7 @@ function poemGenerator(event) {
 
   let prompt = `Generate a swahilli poem about ${userSearch.value}`;
   let context =
-    "You're the best chef  please provide a short, brief and concise six lines swahili poem following the user's search and remember to following a basic html format like this <p> </p> when generating the swahili poem,Sign SheCodes AI below the swahili poem using a <strong> ";
+    "You're the swahili poem assitant  please provide a short, brief and concise six lines swahili poem following the user's search and remember to following a basic html format like this <p> </p> when generating the swahili poem,Sign SheCodes AI below the swahili poem using a <strong> ";
   let apiKey = "5765tb49aco10f17ace1b436b0213fc4";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
