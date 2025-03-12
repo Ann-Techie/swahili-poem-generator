@@ -12,16 +12,16 @@ function poemGenerator(event) {
 
   let userSearch = document.querySelector("#user-input");
 
-  let prompt = `Generate a recipe about ${userSearch.value}`;
+  let prompt = `Generate a swahilli poem about ${userSearch.value}`;
   let context =
-    "You're the best chef  please provide a short, brief and concise recipe following the user's search and remember to following a basic html format like this <p> </p> when generating the food recipe,Sign SheCodes AI below the recipe using a <strong> ";
+    "You're the best chef  please provide a short, brief and concise six lines swahili poem following the user's search and remember to following a basic html format like this <p> </p> when generating the swahili poem,Sign SheCodes AI below the swahili poem using a <strong> ";
   let apiKey = "5765tb49aco10f17ace1b436b0213fc4";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let poem = document.querySelector("#poem");
   poem.classList.remove("hidden");
   poem.innerHTML = `<div class="blink">
-      🔃 Generating a recipe about ${userSearch.value} for
+      🔃 Generating a swahili poem about ${userSearch.value} for
       you...;
     </div>`;
 
