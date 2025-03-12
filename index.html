@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>My AI poem</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Best recipes</h1>
+      </header>
+      <main>
+        <div class="form-wrapper">
+          <form id="form">
+            <input
+              type="text"
+              placeholder="Enter your desired dish..."
+              required
+              autofocus
+              autocomplete="off"
+              class="input-bar"
+              id="user-input"
+            />
+            <input type="submit" class="search-button" />
+          </form>
+          <div class="hint">hint: beef, cocktail, rice etc</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+      <footer>
+        AI project coded by
+        <a href="https://github.com/Ann-Techie" target="_blank">Ann Kamau</a> is
+        <a
+          href="https://github.com/Ann-Techie/english-poem-generator"
+          target="_blank"
+          >open-sourced on Github</a
+        >
+        and
+        <a href="https://swahili-poem.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
