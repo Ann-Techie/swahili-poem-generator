@@ -1,0 +1,105 @@
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(209, 158, 246) 11.2%,
+    rgb(93, 219, 241) 91.1%
+  );
+
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+a {
+  color: blue;
+}
+
+.container {
+  max-width: 600px;
+  margin: 45px auto;
+
+  border-radius: 10px;
+  padding: 30px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-wrapper {
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+form {
+  display: flex;
+}
+.hint {
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 15px;
+  opacity: 0.6;
+}
+.input-bar {
+  color: black;
+  width: 80%;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  padding: 20px 30px;
+  font-size: 16px;
+  border-radius: 50px;
+}
+.search-button {
+  background: #d09ef6;
+  color: white;
+  margin-left: 10px;
+  width: 150px;
+  padding: 20px 30px;
+  font-size: 15px;
+  border-radius: 50px;
+}
+.poem {
+  font-size: 22px;
+  color: black;
+  font-weight: 500;
+  background-color: #fff;
+  padding: 20px;
+  line-height: 2;
+  border-left: 3px solid #885df1;
+  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0);
+}
+
+.hidden {
+  display: none;
+}
+
+.poem strong {
+  color: #885df1;
+}
+
+footer {
+  font-size: 15px;
+  margin-top: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
